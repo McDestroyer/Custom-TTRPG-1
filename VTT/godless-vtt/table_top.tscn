@@ -1,0 +1,91 @@
+[gd_scene load_steps=5 format=3 uid="uid://g75mf4ueunj3"]
+
+[ext_resource type="Script" uid="uid://ddxqkt637g530" path="res://map_layers.gd" id="1_l42lq"]
+[ext_resource type="Texture2D" uid="uid://pdmtxm1cskxa" path="res://icon.svg" id="2_pmlqh"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pcbnm"]
+texture = ExtResource("2_pmlqh")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_qryt1"]
+tile_size = Vector2i(128, 128)
+sources/0 = SubResource("TileSetAtlasSource_pcbnm")
+
+[node name="TableTop" type="Node2D"]
+
+[node name="MapLayers" type="Node2D" parent="."]
+script = ExtResource("1_l42lq")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="MapLayers"]
+tile_set = SubResource("TileSet_qryt1")
+
+[node name="TileMapLayer2" type="TileMapLayer" parent="MapLayers"]
+tile_set = SubResource("TileSet_qryt1")
+
+[node name="TextureRect" type="TextureRect" parent="MapLayers/TileMapLayer2"]
+offset_right = 40.0
+offset_bottom = 40.0
