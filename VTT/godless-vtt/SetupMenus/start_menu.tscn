@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=3 uid="uid://bv5pcvivpjxqi"]
+
+[ext_resource type="Script" uid="uid://eqw80dgld6n8" path="res://SetupMenus/start_menu.gd" id="1_7nuwg"]
+
+[node name="StartMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_7nuwg")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="Create" type="Button" parent="CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+text = "Host"
+
+[node name="Load" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Load"
+
+[node name="Connect" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Connect"
+
+[node name="Settings" type="Button" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Settings"
+
+[node name="SettingsNote" type="Label" parent="CenterContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+text = "Sorry, global settings aren't implemented yet!"
+horizontal_alignment = 1
+
+[connection signal="button_up" from="CenterContainer/VBoxContainer/Create" to="." method="_on_create_button_up"]
+[connection signal="button_up" from="CenterContainer/VBoxContainer/Load" to="." method="_on_load_button_up"]
+[connection signal="button_up" from="CenterContainer/VBoxContainer/Connect" to="." method="_on_connect_button_up"]
+[connection signal="button_up" from="CenterContainer/VBoxContainer/Settings" to="." method="_on_settings_button_up"]

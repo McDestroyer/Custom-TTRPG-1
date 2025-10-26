@@ -11,8 +11,20 @@ config_version=5
 [application]
 
 config/name="Godless VTT"
+run/main_scene="uid://bv5pcvivpjxqi"
 config/features=PackedStringArray("4.5", "Mobile")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Tools="*res://Singletons/tools.gd"
+GameSettings="*res://Singletons/game_settings.gd"
+
+[importer_defaults]
+
+texture={
+&"svg/scale": 100.0
+}
 
 [rendering]
 
