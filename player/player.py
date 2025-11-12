@@ -1,0 +1,118 @@
+"""
+Stats/skills:
+    - Strength
+        # Other effects: Affects carrying capacity and is often used for minimum weapon/armor requirements.
+        - Combat
+            - Melee damage (involves both strength in hitting and knowing where to hit)
+            - Ranged damage (involves both strength in drawing the bow and knowing where to aim)
+            - Grappling (involves strength in holding and maneuvering opponents)
+        - Physical
+            - Lifting (how much you can lift/pull/push)
+            - Climbing (ability to scale vertical surfaces)
+            - Swimming (ability to move through water)
+        - Endurance
+            - Stamina Pool
+            - Health Regeneration
+            - Carrying Capacity (maximum weight you can carry without penalties)
+        - Resistances
+            - Passive Damage Resistance (base damage reduction that applies to all damage types)
+            - Poison/Disease Resistance (resistance to ongoing damage effects from poisons and diseases)
+            - Physical Resistance (resistance to physical damage types like blunt, slashing, and piercing)
+            - Fatigue Resistance (resistance to fatigue effects that reduce stamina regeneration or maximum stamina)
+            - Environmental Resistance (resistance to environmental effects like heat, cold, and pressure)
+    - Agility
+        - Melee Attack (hit chance and handling, including maintenance and minor repairs)
+            - Swords
+            - Axes
+            - Fists
+            - Spears
+            - Daggers
+            - Blunts
+            - Staffs
+        - Ranged Attack (hit chance and handling, including maintenance and minor repairs)
+            - Archery
+            - Crossbow
+            - Throwing Daggers
+            - Slings
+            - Javelins
+            - Firearms
+        - Dodge (avoidance chance, added to a base value to determine chance of dodging an attack entirely (equivalent to AC in DnD). Also rolled to avoid traps and reduce injury from AoE attacks)
+        - Speed (ground movement speed)
+        - Jumping (height and distance)
+        - Initiative (initiative in combat)
+        - Stealth (hiding, sneaking, and slight of hand)
+        - Acrobatics (performing agile maneuvers, including flips, rolls, and other dexterous movements)
+    - Intelligence
+        - Magical
+            - Spell Complexity Limit (maximum complexity of individual spells you can cast without risk of miscasting)
+            - Spell Memory Capacity (amount of cumulative spell complexity you can memorize at once without risk of miscasting)
+            - Mana Efficiency (reduces mana cost of spells)
+            - Spell Comprehension (ability to learn and understand spells, involves decoding and understanding spells written by others)
+            - Spell Hacking (ability to modify existing spells to change their effects, involves a light magical touch and the ability to change out parts while a spell is active without breaking it)
+            - Spell Crafting (ability to create new spells from scratch, involves deep understanding of magical principles and the ability to weave them together into a functional spell)
+        - Knowledge (academic and theoretical knowledge, rarely practical application or first-hand experience)
+            - Magical Theory (understanding of magical principles and concepts)
+            - History and Lore (knowledge of historical events, myths, and legends)
+            - Art (understanding and appreciation of various art forms, including visual arts, music, and performance)
+            - Arcane Lore (knowledge of magical creatures, artifacts, and phenomena)
+            - Science and Technology (basic understanding of scientific principles and technological concepts like steam power, gunpowder, and other primarily chemical/mechanical technologies)
+            - Religion (understanding of religious beliefs, practices, and their cultural significance)
+            - Geography (understanding of the world's landscapes, climates, and cultures)
+            - Nature (understanding of the natural world, including flora, fauna, and ecosystems)
+            - Medical (understanding of anatomy and medical procedures)
+            - Languages (The ability to learn and understand new languages. Each language is a separate subskill. Until [insert value here] listening/reading is the only available subskill. Afterwards, speaking and writing in the language is possible. A subskill level of [insert value here] requires no roll to understand or convey intent in that language.)
+                - Listening/Speaking
+                - Reading/Writing
+        - Creation Skills (crafting, building, and inventing. Each is a separate subskill. The first few levels cover basic proficiency recreating things from instructions, while higher levels allow for innovations.)
+        - Logic (problem solving and reasoning)
+            - Research (finding and synthesizing information)
+            - Puzzle Solving (solving complex problems and riddles)
+            - Reverse Engineering (deconstructing and understanding complex systems and devices, often to recreate or improve them or to disarm traps and other devices)
+            - Investigation (putting together information gathered from various sources to form a coherent picture of events or situations. Requires having information to work with)
+    - Willpower
+        - Vitality (overall health pool)
+        - Stamina Recovery Rate
+        - Magical
+            - Mana Recovery Rate
+            - Spell Power (mana output per round limit)
+        - Resistances
+            - Demoralization Resistance
+            - Fear Resistance
+            - Mental Resistance (resistance to mental effects like confusion, madness, and sleep)
+            - Emotional Resistance (resistance to emotional effects like charm, fear, and despair)
+            - Physical Resistance (resistance to physical effects like pain, fatigue, and injury)
+        - Social (Controlling social situations)
+            - Leadership (Inspiring and guiding others)
+            - Intimidation (Using fear to influence others)
+            - Persuasion (Convincing others to see your point of view)
+            - Deception (Misleading others. Never specified as opposed to Persuasion to keep the opponent's player guessing)
+            - Negotiation (Bargaining for better deals)
+    - Wisdom
+        - Magical
+            - Mana Pool (amount of mana you can hold before taking penalties)
+        - Resistances
+            - Charm Resistance (resistance to mind-affecting spells)
+            - Mind Control Resistance (resistance to direct control effects)
+        - Social (understanding people in social situations)
+            - Insight (understanding motives)
+            - Perception (noticing hidden things)
+            - Empathy (Judging others' opinion of you and potentially how far you can push them)
+            - Gathering Information (extracting useful information from conversations and situations)
+        - Healing (ability to heal others)
+            - Recognition (identifying injuries and illnesses)
+            - Treatment (administering effective healing)
+            - Surgery (performing invasive medical procedures)
+        - Artistry (creating art, music, and performance. Can also be used with Willpower social skills to influence or deceive others)
+            - Visual Arts (painting, drawing, sculpture)
+            - Music (playing instruments, singing)
+            - Performance (acting, dancing, storytelling)
+            - Literature (writing poetry, stories, and other written works)
+        - Survival Skills
+            - Foraging
+            - Tracking
+            - Fishing
+            - Cooking
+            - Herbalism
+            - Trapping
+            - Ropework (using ropes for climbing, binding, and other tasks. Agility can alternatively be used for more physical ropework tasks)
+"""
